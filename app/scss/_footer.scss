@@ -1,0 +1,94 @@
+.footer {
+  &__contact {
+    background-color: $softBlue;
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+
+    p {
+      color: white;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+      @include breakpoint-up(large) {
+        font-size: 28px;
+        max-width: 420px;
+        margin: 20px auto 30px;
+      }
+    }
+    input {
+      box-sizing: border-box;
+      width: 300px;
+      border-radius: 7px;
+      margin-bottom: 15px;
+      color: $grayishBlue;
+      padding: 18px 20px;
+      font-weight: 500;
+      font-size: 15px;
+      :invalid {
+        color: red;
+      }
+    }
+    button {
+      border: none;
+      padding: 20px 30px;
+      border-radius: 7px;
+      width: 300px;
+      color: white;
+      background-color: $softRed;
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      cursor: pointer;
+      @include breakpoint-up(medium) {
+        width: auto;
+        margin-left: 15px;
+      }
+    }
+  }
+  &__links {
+    @include breakpoint-up(large) {
+      padding: 15px 160px 15px 50px;
+    }
+    background-color: $veryDarkBlue;
+    padding: 40px 30px;
+    text-align: center;
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    a {
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      font-size: 15px;
+      letter-spacing: 2px;
+      @include breakpoint-up(large) {
+        margin-right: 15px;
+      }
+    }
+  }
+  &__links2 {
+    margin-bottom: 30px;
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
+  &__links3 {
+    img {
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+}

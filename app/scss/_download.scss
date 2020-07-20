@@ -1,0 +1,70 @@
+.download {
+  text-align: center;
+  padding: 38px;
+
+  &__intro {
+    max-width: 540px;
+    margin: 0 auto 40px;
+    // h2 {
+    // }
+    // p {
+    //   @include breakpoint-up(medium) {
+    //   }
+    // }
+  }
+  &__main {
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+  }
+  &__item {
+    // max-width: 280px;
+    // max-height: 380px;
+    padding: 50px 0px 26px;
+    border-radius: 10px;
+    box-shadow: 0 13px 13px rgba(0, 0, 0, 0.15);
+    margin: 0 auto 30px;
+    @include breakpoint-up(medium) {
+      margin: 0;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &:nth-child(2) {
+        transform: translateY(40px);
+      }
+      &:nth-child(3) {
+        transform: translateY(80px);
+      }
+    }
+    img {
+      margin-bottom: 30px;
+    }
+    h3 {
+      margin: 0 auto 10px;
+    }
+    p {
+      margin: 0 auto 30px;
+    }
+    .dots {
+      width: 100%;
+      height: 3px;
+      background-image: url("../../images/bg-dots.svg");
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 15px 35px;
+      border: none;
+      background-color: $softBlue;
+      font-weight: 600;
+      color: white;
+      border-radius: 7px;
+      margin: 0 25px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.intro {
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 150px;
+  @include breakpoint-up(medium) {
+    margin-bottom: 20px;
+  }
+  @include breakpoint-up(large) {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    // padding-left: 168px;
+    padding-right: 60px;
+    padding-left: 168px;
+  }
+  &__text {
+    text-align: center;
+    padding: 10px;
+    @include breakpoint-up(large) {
+      padding: 0;
+      margin-right: 60px;
+      flex: 4;
+      order: 1;
+      text-align: left;
+      transform: translateY(-15%);
+    }
+    h1 {
+      font-weight: 500;
+      margin-top: 0;
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      @include breakpoint-up(large) {
+        font-size: 40px;
+        margin-bottom: 26px;
+        line-height: 44px;
+      }
+    }
+    p {
+      margin-bottom: 26px;
+    }
+  }
+  &__button {
+    display: inline;
+    border: none;
+    font-size: 15px;
+    padding: 15px 16px;
+    border-radius: 6px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+    @include breakpoint-up(large) {
+      margin-right: 18px;
+      margin-bottom: 18px;
+      padding: 18px 26px;
+    }
+    &__primary {
+      background-color: $softBlue;
+      color: white;
+    }
+    &__secondary {
+      background-color: whitesmoke;
+      color: $veryDarkBlue;
+    }
+  }
+
+  &__image {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    @include breakpoint-up(large) {
+      flex: 6;
+      order: 2;
+    }
+
+    .back {
+      z-index: -1;
+      background-color: $softBlue;
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      border-bottom-left-radius: 100px;
+      border-top-left-radius: 100px;
+      right: -14px;
+      bottom: -8px;
+      @include breakpoint-up(medium) {
+        right: -60px;
+        bottom: -8px;
+        width: 520px;
+        height: 350px;
+        border-bottom-left-radius: 175px;
+        border-top-left-radius: 175px;
+      }
+    }
+  }
+}
