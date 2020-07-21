@@ -61,10 +61,21 @@
     &__primary {
       background-color: $softBlue;
       color: white;
+      border: 2px solid $softBlue;
+      &:hover {
+        background-color: white;
+        color: $softBlue;
+      }
     }
     &__secondary {
       background-color: whitesmoke;
       color: $veryDarkBlue;
+      border: 2px solid transparent;
+      &:hover {
+        background-color: white;
+        color: $veryDarkBlue;
+        border: 2px solid $veryDarkBlue;
+      }
     }
   }
 

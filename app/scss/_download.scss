@@ -57,14 +57,18 @@
       margin-bottom: 20px;
     }
     button {
-      padding: 15px 35px;
-      border: none;
+      padding: 14px 34px;
+      border: 2px solid $softBlue;
       background-color: $softBlue;
       font-weight: 600;
       color: white;
       border-radius: 7px;
       margin: 0 25px;
       cursor: pointer;
+      &:hover {
+        background-color: white;
+        color: $softBlue;
+      }
     }
   }
 }

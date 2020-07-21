@@ -23,11 +23,25 @@
       @include breakpoint-up(medium) {
         font-size: 18px;
       }
-      img {
+      &:hover {
+        color: $softRed;
+      }
+      svg {
         height: 100%;
         z-index: -1;
+        // transform: rotate(180deg);
       }
     }
+  }
+  &__answer {
+    display: flex;
+    width: 100%;
+    svg {
+      width: 18px;
+    }
+  }
+  .noshow {
+    display: none;
   }
   &__main {
     margin-bottom: 50px;

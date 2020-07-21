@@ -42,6 +42,9 @@
         padding: 0 40px 23px;
         border-top: none;
       }
+      &:hover {
+        color: $softRed;
+      }
     }
     .active {
       color: $veryDarkBlue;
